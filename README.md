@@ -35,7 +35,7 @@ The web application is hosted on Heroku for demonstration.
   [Github](https://github.com/Preranashukla/Notetaker.git)
   
   ## Video Demo
-  [Video Demo](https://drive.google.com/file/d/1F7RFqpHaAbmBILUObKkZZt-K4-xp_Gl1/view)
+  [Video Demo](https://drive.google.com/file/d/10GMan-JhWhObnCka0FqCMZYmizr6l0RD/view)
   
   ## Live Application
   [Live Application](https://polar-hollows-33539.herokuapp.com/)
