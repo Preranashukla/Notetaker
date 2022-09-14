@@ -1,5 +1,4 @@
-// used as a reference 11-Express/01-Activities/01-Activities/28-Stu_Mini-Project
-// dependencies
+
 const router = require('express').Router();
 const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
@@ -12,7 +11,7 @@ const {
 
 //// GET Route for retrieving notes
 router.get("/", (req, res) => {
-    // res.sendFile(path.join(__dirname, "../db/db.json"));
+    
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
@@ -29,7 +28,7 @@ router.get('/:id', (req, res) => {
       });
   });
 
-// Bonus
+
 // DELETE Route for a specific note
 router.delete('/:id', (req, res) => {
     const noteId = req.params.id;
@@ -68,19 +67,7 @@ router.post("/", (req,res) => {
     }
   });
 
-    // // let note = JSON.parse(fs.readFileSync("../db/db.json"));
-    // let note = fs.readFileSync('db/db.json');
-    // note = JSON.parse(note);
-    // res.json(note);
-    // let noteAdded = {
-    //     title: req.body.title,
-    //     text: req.body.text,
-    //     id: uuidv4(),
-    // };
-
-    // note.push(noteAdded);
-    // fs.writeFileSync("../db/db.json", JSON.stringify(note));
-    // res.json(note);
+    
 
 
 module.exports = router;
