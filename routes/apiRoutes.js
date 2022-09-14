@@ -11,7 +11,7 @@ const {
 
 //// GET Route for retrieving notes
 router.get("/", (req, res) => {
-    
+
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
@@ -41,13 +41,13 @@ router.delete('/:id', (req, res) => {
         // Save that array to the filesystem
         writeToFile('./db/db.json', result);
   
-        // Respond to the DELETE request
+        
         res.json(`Note ${noteId} has been deleted 🗑️`);
       });
   });
 
   
-//Post to save note on body, add it to db.json file, and creats a unique id for each note 
+ 
 router.post("/", (req,res) => {
     console.log(req.body);
 
